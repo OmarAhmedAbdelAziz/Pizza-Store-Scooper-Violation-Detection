@@ -1,0 +1,3 @@
+here is the dataset used to train the model.
+
+https://universe.roboflow.com/pizza-use-case/pizzastore/dataset/4

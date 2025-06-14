@@ -1,0 +1,16 @@
+# Deep Learning & CV
+ultralytics>=8.0.0
+opencv-python
+gdown
+roboflow
+
+# Flask Backend
+Flask
+flask-cors
+
+# Utilities
+uuid
+shutil
+pathlib
+
+# Angular is frontend, handled via npm can not be included in requirements.txt
