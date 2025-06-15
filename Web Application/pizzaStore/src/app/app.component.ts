@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { UploadVideoComponent } from '../frontend/upload-video/upload-video.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [UploadVideoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

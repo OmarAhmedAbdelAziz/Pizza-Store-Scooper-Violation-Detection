@@ -1,1 +1,24 @@
-<p>display-results works!</p>
+<section class="preview">
+
+    @if(isLoading){
+     <p>Please wait few seconds to get results</p>
+    <p-progress-spinner class="flex gap-2" strokeWidth="6" ariaLabel="loading" animationDuration="1s"
+        [style]="{ 'width': '80px', 'height': '80px' , 'stroke': '#52ab98' }" />
+    }
+    @else if(videoUrl){
+
+    <h3>Live Detection Stream</h3>
+    <video [src]="videoUrl" controls width="640" height="360"></video>
+
+    <p> You can open the video externally using <a [href]="videoUrl" target="_blank">this link</a>.</p>
+    @if(violations===0){
+        <p class="violations-text"> 🎉 Hooray! No violations found!</p>
+    }
+    @else {
+        <p class="violations-text"> 🚨 Total Number of Violations Detected: {{ violations}}</p>
+    }
+}
+    @else {
+    <p>No video selected.</p>
+    }
+</section>

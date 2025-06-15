@@ -1,1 +1,21 @@
-<p>upload-video works!</p>
+<div class="container">
+    <div class="header">
+        <h1>Pizza Store Scooper Violation Detection</h1>
+    </div>
+    <div class="box">
+        <label class="upload-box">
+            <input type="file" accept="video" hidden (change)="handleFile($event)" />
+            @if(!fileName){
+            <span> Click to choose a video file </span>
+            }
+
+            @else {
+            <span> {{fileName}} </span>
+            }
+            
+        </label>
+        <div>
+            <app-display-results [videoUrl]="videoUrl()" [violations]="violations()" [isLoading]="isLoading()"></app-display-results>
+        </div>
+    </div>
+</div>
