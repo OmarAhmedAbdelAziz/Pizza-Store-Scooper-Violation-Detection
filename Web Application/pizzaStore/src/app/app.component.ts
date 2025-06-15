@@ -4,8 +4,7 @@ import { UploadVideoComponent } from '../frontend/upload-video/upload-video.comp
 @Component({
   selector: 'app-root',
   imports: [UploadVideoComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'pizzaStore';
