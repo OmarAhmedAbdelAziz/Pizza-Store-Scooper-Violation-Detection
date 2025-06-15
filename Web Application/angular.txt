@@ -1,0 +1,1 @@
+This project is visualized through angular frontend framework as it supports SPA (single page application), that meets our goal for the microservices 
